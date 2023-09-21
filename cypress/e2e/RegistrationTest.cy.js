@@ -13,9 +13,10 @@ describe("Testing the registration process", ()=>{
             }
         }).then((response)=>{
             expect(response.status).to.eq(200)
+            console.log(response.body)
             //var token = response.body.token
             //envVar.token = token
-            cy.writeFile('cypress/fistures/envireonment.json', JSON.stringify(envVar))
+            //cy.writeFile('cypress/fixtures/envVar.json', JSON.stringify(envVar))
 
         })
     })
