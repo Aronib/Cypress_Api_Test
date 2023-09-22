@@ -5,7 +5,7 @@ describe("Testing the registration process", ()=>{
     it("Registers with unused email", ()=>{
         cy.request({
             method: "POST",
-            url:envVar.baseUrl + "/registration",
+            url:envVar.baseUrl + "/authaccount/registration",
             body:{
             "name":"Developer",
             "email":"Developer5588@gmail.com",
